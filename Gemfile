@@ -12,6 +12,7 @@ gem "pg", "~> 1.1"
 gem 'rack-cors'
 gem 'devise'
 gem 'devise-jwt'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
