@@ -1,5 +1,7 @@
 class Api::PostsController < ApplicationController
   before_action :set_api_post, only: %i[ show update destroy ]
+  before_action :authenticate_user!
+  respond_to :json
 
   # GET /api/posts
   def index

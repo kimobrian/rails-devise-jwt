@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users,
+             controllers: {
+                 sessions: 'api/users/sessions',
+                 registrations: 'api/users/registrations'
+             }
   namespace :api do
     resources :posts
   end
