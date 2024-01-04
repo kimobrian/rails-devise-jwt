@@ -8,6 +8,13 @@ gem "rails", "~> 7.1.2"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'rack-cors'
+gem 'devise'
+gem 'devise-jwt'
+gem 'jsonapi-serializer'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
